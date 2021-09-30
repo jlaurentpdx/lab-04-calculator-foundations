@@ -1,8 +1,12 @@
-// import functions and grab DOM elements
+import { add } from './calculations.js';
 
-// initialize global state
+const addInput1 = document.getElementById('add-input-1');
+const addInput2 = document.getElementById('add-input-2');
+const addResult = document.getElementById('add-result');
+const addBtn = document.getElementById('add-btn');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+addBtn.addEventListener('click', ()=> {
+    console.log('add button clicked');
+});
+
+// console.log(add);
