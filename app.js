@@ -6,7 +6,11 @@ const addResult = document.getElementById('add-result');
 const addBtn = document.getElementById('add-btn');
 
 addBtn.addEventListener('click', ()=> {
-    console.log('add button clicked');
+    const value1 = Number(addInput1.value);
+    const value2 = Number(addInput2.value);
+    const result = add(value1, value2);
+
+    addResult.textContent = result;
 });
 
 // console.log(add);
