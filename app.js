@@ -10,6 +10,11 @@ const subInput2 = document.getElementById('sub-input-2');
 const subResult = document.getElementById('sub-result');
 const subButton = document.getElementById('sub-button');
 
+const multInput1 = document.getElementById('mult-input-1');
+const multInput2 = document.getElementById('mult-input-2');
+const multResult = document.getElementById('mult-result');
+const multButton = document.getElementById('mult-button');
+
 addButton.addEventListener('click', ()=> {
     const x = Number(addInput1.value); 
     const y = Number(addInput2.value); 
@@ -24,5 +29,9 @@ subButton.addEventListener('click', ()=> {
     const result = sub(x, y);
 
     subResult.textContent = result;
+});
+
+multButton.addEventListener('click', ()=> {
+    console.log('mult button clicked');
 });
 
