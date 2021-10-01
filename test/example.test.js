@@ -18,8 +18,8 @@ test('add function', (expect) => {
 });
 
 test('subtract function', (expect) => {
-    const expected = 7;
-    const actual = add(4, 3);
+    const expected = 1;
+    const actual = sub(4, 3);
 
     expect.equal(actual, expected);
 });
