@@ -1,4 +1,4 @@
-import { add } from './calculations.js';
+import { add, sub } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -13,12 +13,16 @@ const subButton = document.getElementById('sub-button');
 addButton.addEventListener('click', ()=> {
     const x = Number(addInput1.value); 
     const y = Number(addInput2.value); 
-
     const result = add(x, y);
+
     addResult.textContent = result;
 });
 
 subButton.addEventListener('click', ()=> {
-    console.log('Subtract button clicked');
+    const x = Number(subInput1.value);
+    const y = Number(subInput2.value);
+    const result = sub(x, y);
+
+    subResult.textContent = result;
 });
 
